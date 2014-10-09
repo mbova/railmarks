@@ -8,13 +8,14 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
 gem 'foundation-rails'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'simple_form'
+gem 'figaro'
+gem 'mailgun'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -22,6 +23,7 @@ group :development do
   gem 'hub', :require=>nil
   gem 'quiet_assets'
   gem 'rails_layout'
+  gem 'spring'
 end
 group :development, :test do
   gem 'factory_girl_rails'
